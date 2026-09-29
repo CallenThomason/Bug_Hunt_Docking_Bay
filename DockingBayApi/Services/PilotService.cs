@@ -37,7 +37,7 @@ public class PilotService : IPilotService
     {
         pilot.Id = _nextId;
 
-        //pilot.FlightHours = 0;
+        pilot.FlightHours = 0;
 
         _pilots.Add(pilot);
         return pilot;
