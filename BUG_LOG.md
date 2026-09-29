@@ -35,6 +35,7 @@ Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 
 | 13 | `Services/PilotService.cs`|53 | Logic| was setting flightHours equal to hours | changed = to += |
 | 14 |`Controllers/PilotsController.cs` |62 | Logic | The if statement did not include 0| changed < to <= |
 | 15 |`Controllers/PilotsController.cs` | 52| Runtime| The name does not match the url call | fixed the name |
+|16 | `Controllers/PilotsController.cs` | 56 | logic | REturn result 200 is given to the user, not 201. | Changed return Ok to CreatedAtAction
 
 
 
@@ -44,7 +45,7 @@ Log **every** bug as you fix it, one row per bug. There are **15**: 5 syntax, 4 
 |------|-------|
 | Syntax | _5__ / 5 |
 | Runtime | __4_ / 4 |
-| Logic | _6__ / 6 |
+| Logic | _7?__ / 6 |
 
 ## Reflection
 

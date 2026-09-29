@@ -46,7 +46,7 @@ public class ShipsController : ControllerBase
     public ActionResult<Ship> Create(Ship ship)
     {
         Ship created = _ships.Create(ship);
-        return Ok(created);
+        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created );
     }
 
     [HttpPut("{id}/refuel")]
